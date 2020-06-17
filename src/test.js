@@ -13,11 +13,12 @@ const checkImage = (t, path) => {
     t.fail('图片格式不合法')
   }
   const dimensions = imageSize(path)
-  if (dimensions.width !== 200 || dimensions.height !== 200) {
+  // if (dimensions.width !== 200 || dimensions.height !== 200) {
+  if (dimensions.width !== dimensions.height) {
     t.fail(`图片尺寸不合法 ${dimensions.width}x${dimensions.height}`)
   }
   const lstat = fs.lstatSync(path)
-  if (lstat.size > 1024 * 20) {
+  if (lstat.size > 1024 * 256) {
     t.fail(`图片文件体积超过限制 ${prettyBytes(lstat.size)}`)
   }
   t.pass()
