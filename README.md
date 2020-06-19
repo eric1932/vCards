@@ -1,13 +1,15 @@
-vCards CN
+vCards EN_US
 =====
 
 导入常用联系人头像，优化 iOS 来电、信息界面体验。
+
+**此项目为美国号码的黄页收录。**
 
 ![Screenshot](https://user-images.githubusercontent.com/2666735/59692672-0b6bdf00-9218-11e9-881e-5856e263f3aa.png)
 
 ## 使用指南
 
- 1. 到 https://github.com/metowolf/vCards/releases 下载最新的打包文件 `archive.zip`；
+ 1. 到 https://github.com/eric1932/vCards/releases 下载最新的打包文件 `archive.zip`；
  2. 解压后，根据不同平台的指南导入 `vcf` 文件至 iCloud 中，推荐单独创建「黄页」分组方便管理和隐藏。
 
 ### macOS
@@ -22,7 +24,7 @@ vCards CN
 
 ## 请求收录
 
- 1. 打开 https://github.com/metowolf/vCards/issues/new/choose 页面，选择「vCard 新增请求」
+ 1. 打开 https://github.com/eric1932/vCards/issues/new/choose 页面，选择「vCard 新增请求」
  2. 完整填写相关信息
  3. 提交 `issue`，等待处理
 
@@ -42,19 +44,17 @@ vCards CN
 ## 图标设计
 
  - 采用 `PNG` 编码
- - 画布大小 `200w200h`
+ - 画布大小 ~~`200w200h`~~ `长宽比1:1即可`
  - logo 居中放置
    - 圆形尺寸 140w140h
    - 正矩形尺寸 120w120h
    - 长矩形尺寸 160w80h
    - 无 svg 需要使用 Inkscape 改绘转换
    - 特殊情况特殊处理
- - 图像大小压缩在 `20 kB` 内
+ - ~~图像大小压缩在 `20 kB` 内~~
 
 ![Design](https://user-images.githubusercontent.com/2666735/60966995-224fae00-a34c-11e9-970c-ea5fa15186c6.png)
 
 ## 致谢
 
- - [114 百事通](http://www.114best.com/)提供查询接口
- - [百度手机卫士](https://haoma.baidu.com/yellowPage)提供查询接口
- - [中国可信号码数据中心](https://www.kexinhaoma.org/)提供查询接口
+ - [metowolf/vCards](https://github.com/metowolf/vCards) 提供项目思路和代码
